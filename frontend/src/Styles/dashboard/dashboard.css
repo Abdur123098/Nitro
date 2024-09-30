@@ -1,0 +1,62 @@
+.main-container {
+  height: 100vh;
+  background: url("/imgs/concert1.jpg");
+  background-size: cover; /* Ensures the image covers the entire body */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.hero-main {
+  margin-left: 10vw;
+  margin-top: 20vh;
+}
+
+.hero-text-box {
+  width: 35%;
+  height: 50vh;
+  padding: 1rem;
+  backdrop-filter: blur(3px); /* Apply the blur effect */
+}
+
+.hero-text {
+  color: beige;
+}
+
+.hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 3vh;
+}
+.hero-text p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 3vh;
+  width: 80%;
+}
+
+.hero-img-box {
+  background-color: antiquewhite;
+  height: 100%;
+  width: 50%;
+}
+
+.artist-box {
+  width: 30vw;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-artists {
+  margin-top: 1vh;
+  display: flex;
+}
+
+.hero-artists img {
+  border-radius: 50%;
+  margin-right: -0.5rem;
+  border: 2px rgb(255, 255, 255) solid;
+}
+
+.artist-text {
+  color: beige;
+}

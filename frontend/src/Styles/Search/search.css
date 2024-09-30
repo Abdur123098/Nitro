@@ -1,0 +1,88 @@
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: "Arial", sans-serif;
+}
+
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.input-container {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 2rem;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.logo {
+  margin-left: 1rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.search-bar {
+  flex: 1;
+  background-color: #1e1e1e; /* Dark input background */
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+  color: #ffffff; /* Light text for input */
+}
+
+.search-bar:focus {
+  background-color: #2a2a2a; /* Lighter on focus */
+  outline: none;
+}
+
+.genre-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e1e1e; /* Dark selector background */
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: #ffffff; /* Light text */
+}
+
+.genre-selector:hover {
+  background-color: #2a2a2a; /* Lighter on hover */
+}
+
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.movie {
+  background-color: #1e1e1e; /* Dark movie card */
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s;
+}
+
+.movie:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}

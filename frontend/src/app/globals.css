@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: black;
+    --foreground: #c63939;
+  }
+
+  /* body {
+    background: var(--background);
+    color: var(--foreground);
+    position: relative;
+    overflow: hidden;
+  } */
+
+  /* Wavy Effect Rotated */
+  .wave {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px; /* Adjust based on desired width */
+    height: 100%;
+    background: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox='0 0 1440 320'><path fill='%23111438' fill-opacity='1' d='M0,160L48,170.7C96,181,192,203,288,224C384,245,480,267,576,256C672,245,768,203,864,186.7C960,171,1056,181,1152,186.7C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'></path></svg>");
+    background-size: cover;
+    transform: rotate(90deg); /* Rotate 90 degrees */
+    transform-origin: right top;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background-color: var(--background);
+  /* background-image: url("/imgs/concert1.jpg Adjusted for public directory */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

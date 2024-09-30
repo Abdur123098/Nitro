@@ -1,0 +1,24 @@
+.movie-container {
+  margin: 0 auto;
+  padding: 2rem;
+  padding-left: 4.5rem;
+  width: 80vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center; /* Distributes space between child elements */
+  height: 44vh; /* Ensure the movie div has a defined height */
+}
+
+.movie-img {
+  height: 35vh;
+}
+
+.movie-title {
+  padding: 0.2rem;
+}
